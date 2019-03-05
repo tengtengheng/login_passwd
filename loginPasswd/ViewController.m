@@ -29,8 +29,17 @@
 {
     if ([segue.identifier isEqualToString:@"one"]) {
         [self.view.window close];
+        NSLog(@"yes");
     }
 }
+
+//- (void)performSegueWithIdentifier:(NSStoryboardSegueIdentifier)identifier sender:(id)sender
+//{
+//    if ([identifier isEqualToString:@"main"]) {
+//        [self.view.window display];
+//    }
+//    NSLog(@"yes");
+//}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
@@ -40,7 +49,7 @@
 
 - (IBAction)login:(id)sender {
     if ([_userfiled.stringValue isEqualToString:@"ludy"] && [_passwdfield.stringValue isEqualToString:@"123456"]) {
-        [self performSegueWithIdentifier:@"main" sender:nil];
+        [self performSegueWithIdentifier:@"one" sender:nil];
         [self.view.window orderOut:nil];
     }
 }

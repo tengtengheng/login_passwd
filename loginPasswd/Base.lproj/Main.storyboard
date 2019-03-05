@@ -714,7 +714,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="弹出" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dOX-W9-CWZ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <segue destination="3gH-h5-FQ9" kind="modal" identifier="one" id="ism-4X-Gcy"/>
@@ -781,7 +781,7 @@
         <!--View Controller-->
         <scene sceneID="iq1-gJ-PI0">
             <objects>
-                <viewController id="3gH-h5-FQ9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="3gH-h5-FQ9" sceneMemberID="viewController">
                     <view key="view" identifier="main" id="JS4-GB-33Z">
                         <rect key="frame" x="0.0" y="0.0" width="474" height="393"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -796,7 +796,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="退出" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BR5-UP-1iI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="dismissController:" target="ce3-w2-LCa" id="PJv-1p-HxO"/>
@@ -807,7 +807,20 @@
                 </viewController>
                 <customObject id="ce3-w2-LCa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="1117"/>
+            <point key="canvasLocation" x="44" y="1116.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bAc-K0-cBk">
+            <objects>
+                <viewController id="taC-eI-IW4" sceneMemberID="viewController">
+                    <view key="view" identifier="main" id="hvg-da-YGD">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="KiK-CY-yRm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="985"/>
         </scene>
     </scenes>
     <resources>
